@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--加载类路径下的配置文件-->
+    <properties resource="db.properties"></properties>
+
+    <typeAliases>
+        <typeAlias alias="Student" type="chuyou.jiang.mybatis.model.Student"></typeAlias>
+    </typeAliases>
+
+    <!--设置一个默认的连接信息-->
+    <environments default="mysql_delveloper">
+        <environment id="mysql_delveloper">
+            <!--启用JDBC事物管理-->
+            <transactionManager type="jdbc">
+            </transactionManager>
+            <dataSource type="pooled">
+                <!--设置数据库连接信息-->
+                <property name="driver" value="${mysql.driver}"></property>
+                <property name="url" value="${mysql.url}"></property>
+                <property name="username" value="${mysql.username}"></property>
+                <property name="password" value="${mysql.password}"></property>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <mappers>
+        <mapper resource="mybatis/mapper/Student.xml"></mapper>
+    </mappers>
+</configuration>

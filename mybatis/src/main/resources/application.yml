@@ -1,0 +1,9 @@
+spring:
+  profiles:
+    active: dev
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  #  config-location: classpath:mybatis/mybatis-config.xml
+  type-aliases-package: chuyou.jiang.mybatis.model

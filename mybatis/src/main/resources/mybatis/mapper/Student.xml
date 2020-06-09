@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="chuyou.jiang.mybatis.mapper.StudentMapper">
+    <resultMap type="Student" id="studentMap">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="sal" column="sal"/>
+    </resultMap>
+
+    <insert id="insertOne" useGeneratedKeys="true" parameterType="Student">
+        insert into students (name, sal) value (#{name}, #{sal})
+    </insert>
+
+    <select id="pagination" parameterType="map" resultMap="studentMap">
+        select * from students limit #{start}, #{end};
+    </select>
+</mapper>
+    
