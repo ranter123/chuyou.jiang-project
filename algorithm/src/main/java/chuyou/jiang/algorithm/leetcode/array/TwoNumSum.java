@@ -6,6 +6,7 @@ import java.util.Map;
 /**
  * @Author: ranter
  * @Date: 2020/6/9 10:07 下午
+ * @Descripiton: 两数之和等于目标数
  */
 public class TwoNumSum {
 
