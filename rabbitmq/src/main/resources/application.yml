@@ -1,0 +1,12 @@
+#默认配置
+server:
+  port: 9001
+#rabbitmq 相关配置
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: admin
+    password: admin
+    virtual-host: my_vhost
+
