@@ -43,10 +43,12 @@ public class MyCache2<A, V> implements Computable<A, V> {
                 }
             };
             FutureTask<V> ft = new FutureTask<>(callable);
-            f = ft;
-            cache.put(arg, ft);
-            ft.run();
-            System.out.println("从FutrueTask调用了计算函数");
+            f = cache.putIfAbsent(arg, ft);
+            if (f == null) {
+                f = ft;
+                ft.run();
+                System.out.println("从FutrueTask调用了计算函数");
+            }
         }
         return f.get();
     }
