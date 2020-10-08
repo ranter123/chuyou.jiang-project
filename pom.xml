@@ -15,6 +15,7 @@
         <module>algorithm</module>
         <module>rabbitmq</module>
         <module>cache</module>
+        <module>redis</module>
     </modules>
     <name>chuyou.jiang-learn-project</name>
 

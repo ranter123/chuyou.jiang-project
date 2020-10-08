@@ -1,0 +1,14 @@
+#配置端口
+server:
+  port: 8080
+
+#配置数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.211.55.8:3306/eshop?encoding=utf8
+    password: Jcy123!@#.
+    username: root
+  redis:
+    password: redis-pass
+
