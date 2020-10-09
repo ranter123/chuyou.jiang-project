@@ -26,6 +26,7 @@
         <mybatis-spring-boot>2.1.1</mybatis-spring-boot>
         <mysql-connector>5.1.46</mysql-connector>
         <spring.boot.version>2.0.5.RELEASE</spring.boot.version>
+<!--        <spring.boot.version>1.2.5.RELEASE</spring.boot.version>-->
         <spring.lombok.version>1.16.22</spring.lombok.version>
         <spring.aop.version>2.2.6.RELEASE</spring.aop.version>
     </properties>

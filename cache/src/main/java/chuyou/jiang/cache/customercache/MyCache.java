@@ -1,4 +1,4 @@
-package chuyou.jiang.cache;
+package chuyou.jiang.cache.customercache;
 
 import java.util.HashMap;
 import java.util.concurrent.TimeUnit;

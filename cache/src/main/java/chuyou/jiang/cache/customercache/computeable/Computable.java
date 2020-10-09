@@ -1,4 +1,4 @@
-package chuyou.jiang.cache.computeable;
+package chuyou.jiang.cache.customercache.computeable;
 
 /**
  * @Author: ranter

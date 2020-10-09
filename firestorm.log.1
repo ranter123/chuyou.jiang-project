@@ -1,0 +1,927 @@
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 87 for topics [Set(cache-message)] from broker [id:1,host:eshop-cache02,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:0,host:eshop-cache01,port:9092 with correlation id 87 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache01:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 87 for topics [Set(cache-message)] from broker [id:0,host:eshop-cache01,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread], Failed to find leader for Set([cache-message,0])
+kafka.common.KafkaException: fetching topic metadata for topics [Set(cache-message)] from broker [ArrayBuffer(id:3,host:eshop-cache03,port:9092, id:1,host:eshop-cache02,port:9092, id:0,host:eshop-cache01,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:67)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	... 3 more
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602157830184] Added fetcher for partitions ArrayBuffer()
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Verifying properties
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property client.id is overridden to eshop-cache-group
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property metadata.broker.list is overridden to eshop-cache01:9092,eshop-cache02:9092,eshop-cache03:9092
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property request.timeout.ms is overridden to 30000
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:3,host:eshop-cache03,port:9092 with correlation id 88 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache03:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 88 for topics [Set(cache-message)] from broker [id:3,host:eshop-cache03,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:0,host:eshop-cache01,port:9092 with correlation id 88 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache01:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 88 for topics [Set(cache-message)] from broker [id:0,host:eshop-cache01,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:1,host:eshop-cache02,port:9092 with correlation id 88 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache02:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 88 for topics [Set(cache-message)] from broker [id:1,host:eshop-cache02,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread], Failed to find leader for Set([cache-message,0])
+kafka.common.KafkaException: fetching topic metadata for topics [Set(cache-message)] from broker [ArrayBuffer(id:3,host:eshop-cache03,port:9092, id:0,host:eshop-cache01,port:9092, id:1,host:eshop-cache02,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:67)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	... 3 more
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602157830184] Added fetcher for partitions ArrayBuffer()
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Verifying properties
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property client.id is overridden to eshop-cache-group
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property metadata.broker.list is overridden to eshop-cache01:9092,eshop-cache02:9092,eshop-cache03:9092
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property request.timeout.ms is overridden to 30000
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:0,host:eshop-cache01,port:9092 with correlation id 89 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache01:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 89 for topics [Set(cache-message)] from broker [id:0,host:eshop-cache01,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:1,host:eshop-cache02,port:9092 with correlation id 89 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache02:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 89 for topics [Set(cache-message)] from broker [id:1,host:eshop-cache02,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:3,host:eshop-cache03,port:9092 with correlation id 89 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache03:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 89 for topics [Set(cache-message)] from broker [id:3,host:eshop-cache03,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread], Failed to find leader for Set([cache-message,0])
+kafka.common.KafkaException: fetching topic metadata for topics [Set(cache-message)] from broker [ArrayBuffer(id:0,host:eshop-cache01,port:9092, id:1,host:eshop-cache02,port:9092, id:3,host:eshop-cache03,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:67)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	... 3 more
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602157830184] Added fetcher for partitions ArrayBuffer()
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Verifying properties
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property client.id is overridden to eshop-cache-group
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property metadata.broker.list is overridden to eshop-cache01:9092,eshop-cache02:9092,eshop-cache03:9092
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property request.timeout.ms is overridden to 30000
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:3,host:eshop-cache03,port:9092 with correlation id 90 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache03:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 90 for topics [Set(cache-message)] from broker [id:3,host:eshop-cache03,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:0,host:eshop-cache01,port:9092 with correlation id 90 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache01:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 90 for topics [Set(cache-message)] from broker [id:0,host:eshop-cache01,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:1,host:eshop-cache02,port:9092 with correlation id 90 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache02:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 90 for topics [Set(cache-message)] from broker [id:1,host:eshop-cache02,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread], Failed to find leader for Set([cache-message,0])
+kafka.common.KafkaException: fetching topic metadata for topics [Set(cache-message)] from broker [ArrayBuffer(id:3,host:eshop-cache03,port:9092, id:0,host:eshop-cache01,port:9092, id:1,host:eshop-cache02,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:67)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	... 3 more
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602157830184] Added fetcher for partitions ArrayBuffer()
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Verifying properties
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property client.id is overridden to eshop-cache-group
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property metadata.broker.list is overridden to eshop-cache01:9092,eshop-cache02:9092,eshop-cache03:9092
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property request.timeout.ms is overridden to 30000
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:3,host:eshop-cache03,port:9092 with correlation id 91 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache03:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 91 for topics [Set(cache-message)] from broker [id:3,host:eshop-cache03,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:0,host:eshop-cache01,port:9092 with correlation id 91 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache01:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 91 for topics [Set(cache-message)] from broker [id:0,host:eshop-cache01,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:1,host:eshop-cache02,port:9092 with correlation id 91 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache02:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 91 for topics [Set(cache-message)] from broker [id:1,host:eshop-cache02,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread], Failed to find leader for Set([cache-message,0])
+kafka.common.KafkaException: fetching topic metadata for topics [Set(cache-message)] from broker [ArrayBuffer(id:3,host:eshop-cache03,port:9092, id:0,host:eshop-cache01,port:9092, id:1,host:eshop-cache02,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:67)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	... 3 more
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602157830184] Added fetcher for partitions ArrayBuffer()
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Verifying properties
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property client.id is overridden to eshop-cache-group
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property metadata.broker.list is overridden to eshop-cache01:9092,eshop-cache02:9092,eshop-cache03:9092
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property request.timeout.ms is overridden to 30000
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:0,host:eshop-cache01,port:9092 with correlation id 92 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache01:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 92 for topics [Set(cache-message)] from broker [id:0,host:eshop-cache01,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:1,host:eshop-cache02,port:9092 with correlation id 92 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache02:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 92 for topics [Set(cache-message)] from broker [id:1,host:eshop-cache02,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:3,host:eshop-cache03,port:9092 with correlation id 92 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache03:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 92 for topics [Set(cache-message)] from broker [id:3,host:eshop-cache03,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread], Failed to find leader for Set([cache-message,0])
+kafka.common.KafkaException: fetching topic metadata for topics [Set(cache-message)] from broker [ArrayBuffer(id:0,host:eshop-cache01,port:9092, id:1,host:eshop-cache02,port:9092, id:3,host:eshop-cache03,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:67)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	... 3 more
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602157830184] Added fetcher for partitions ArrayBuffer()
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Verifying properties
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property client.id is overridden to eshop-cache-group
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property metadata.broker.list is overridden to eshop-cache01:9092,eshop-cache02:9092,eshop-cache03:9092
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property request.timeout.ms is overridden to 30000
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:0,host:eshop-cache01,port:9092 with correlation id 93 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache01:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 93 for topics [Set(cache-message)] from broker [id:0,host:eshop-cache01,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:1,host:eshop-cache02,port:9092 with correlation id 93 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache02:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 93 for topics [Set(cache-message)] from broker [id:1,host:eshop-cache02,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:3,host:eshop-cache03,port:9092 with correlation id 93 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache03:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 93 for topics [Set(cache-message)] from broker [id:3,host:eshop-cache03,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread], Failed to find leader for Set([cache-message,0])
+kafka.common.KafkaException: fetching topic metadata for topics [Set(cache-message)] from broker [ArrayBuffer(id:0,host:eshop-cache01,port:9092, id:1,host:eshop-cache02,port:9092, id:3,host:eshop-cache03,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:67)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	... 3 more
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602157830184] Added fetcher for partitions ArrayBuffer()
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Verifying properties
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property client.id is overridden to eshop-cache-group
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property metadata.broker.list is overridden to eshop-cache01:9092,eshop-cache02:9092,eshop-cache03:9092
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property request.timeout.ms is overridden to 30000
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:0,host:eshop-cache01,port:9092 with correlation id 94 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache01:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 94 for topics [Set(cache-message)] from broker [id:0,host:eshop-cache01,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:3,host:eshop-cache03,port:9092 with correlation id 94 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache03:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 94 for topics [Set(cache-message)] from broker [id:3,host:eshop-cache03,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:1,host:eshop-cache02,port:9092 with correlation id 94 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache02:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 94 for topics [Set(cache-message)] from broker [id:1,host:eshop-cache02,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread], Failed to find leader for Set([cache-message,0])
+kafka.common.KafkaException: fetching topic metadata for topics [Set(cache-message)] from broker [ArrayBuffer(id:0,host:eshop-cache01,port:9092, id:3,host:eshop-cache03,port:9092, id:1,host:eshop-cache02,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:67)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	... 3 more
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602157830184] Added fetcher for partitions ArrayBuffer()
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Verifying properties
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property client.id is overridden to eshop-cache-group
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property metadata.broker.list is overridden to eshop-cache01:9092,eshop-cache02:9092,eshop-cache03:9092
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property request.timeout.ms is overridden to 30000
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:0,host:eshop-cache01,port:9092 with correlation id 95 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache01:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 95 for topics [Set(cache-message)] from broker [id:0,host:eshop-cache01,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:3,host:eshop-cache03,port:9092 with correlation id 95 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache03:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 95 for topics [Set(cache-message)] from broker [id:3,host:eshop-cache03,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:1,host:eshop-cache02,port:9092 with correlation id 95 for 1 topic(s) Set(cache-message)
+ERROR eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Producer connection to eshop-cache02:9092 unsuccessful
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching topic metadata with correlation id 95 for topics [Set(cache-message)] from broker [id:1,host:eshop-cache02,port:9092] failed
+java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+WARN eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager$LeaderFinderThread - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread], Failed to find leader for Set([cache-message,0])
+kafka.common.KafkaException: fetching topic metadata for topics [Set(cache-message)] from broker [ArrayBuffer(id:0,host:eshop-cache01,port:9092, id:3,host:eshop-cache03,port:9092, id:1,host:eshop-cache02,port:9092)] failed
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:67)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:88)
+	at kafka.consumer.ConsumerFetcherManager$LeaderFinderThread.doWork(ConsumerFetcherManager.scala:66)
+	at kafka.utils.ShutdownableThread.run(ShutdownableThread.scala:51)
+Caused by: java.nio.channels.UnresolvedAddressException
+	at sun.nio.ch.Net.checkAddress(Net.java:101)
+	at sun.nio.ch.SocketChannelImpl.connect(SocketChannelImpl.java:622)
+	at kafka.network.BlockingChannel.connect(BlockingChannel.scala:57)
+	at kafka.producer.SyncProducer.connect(SyncProducer.scala:141)
+	at kafka.producer.SyncProducer.getOrMakeConnection(SyncProducer.scala:156)
+	at kafka.producer.SyncProducer.kafka$producer$SyncProducer$$doSend(SyncProducer.scala:68)
+	at kafka.producer.SyncProducer.send(SyncProducer.scala:112)
+	at kafka.client.ClientUtils$.fetchTopicMetadata(ClientUtils.scala:53)
+	... 3 more
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602157830184] Added fetcher for partitions ArrayBuffer()
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Verifying properties
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property client.id is overridden to eshop-cache-group
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property metadata.broker.list is overridden to eshop-cache01:9092,eshop-cache02:9092,eshop-cache03:9092
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.utils.VerifiableProperties - Property request.timeout.ms is overridden to 30000
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.client.ClientUtils$ - Fetching metadata from broker id:1,host:eshop-cache02,port:9092 with correlation id 96 for 1 topic(s) Set(cache-message)
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Connected to eshop-cache02:9092 for producing
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.producer.SyncProducer - Disconnecting from eshop-cache02:9092
+INFO ConsumerFetcherThread-eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-0-3 kafka.consumer.ConsumerFetcherThread - [ConsumerFetcherThread-eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-0-3], Starting 
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602157800129-dba65977-leader-finder-thread kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602157830184] Added fetcher for partitions ArrayBuffer([[cache-message,0], initOffset 29 to broker id:3,host:eshop-cache03,port:9092] )
+INFO localhost-startStop-1 kafka.utils.VerifiableProperties - Verifying properties
+INFO localhost-startStop-1 kafka.utils.VerifiableProperties - Property auto.commit.interval.ms is overridden to 1000
+INFO localhost-startStop-1 kafka.utils.VerifiableProperties - Property group.id is overridden to eshop-cache-group
+INFO localhost-startStop-1 kafka.utils.VerifiableProperties - Property zookeeper.connect is overridden to 10.211.55.5:2181,10.211.55.6:2181,10.211.55.7:2181
+INFO localhost-startStop-1 kafka.utils.VerifiableProperties - Property zookeeper.session.timeout.ms is overridden to 40000
+INFO localhost-startStop-1 kafka.utils.VerifiableProperties - Property zookeeper.sync.time.ms is overridden to 200
+INFO localhost-startStop-1 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], Connecting to zookeeper instance at 10.211.55.5:2181,10.211.55.6:2181,10.211.55.7:2181
+INFO ZkClient-EventThread-29-10.211.55.5:2181,10.211.55.6:2181,10.211.55.7:2181 org.I0Itec.zkclient.ZkEventThread - Starting ZkClient event thread.
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:zookeeper.version=3.3.3-1203054, built on 11/17/2011 05:47 GMT
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:host.name=localhost
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:java.version=1.8.0_211
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:java.vendor=Oracle Corporation
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:java.class.path=/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home/lib/tools.jar:/Users/jiangchuyou/Desktop/workspace-java/chuyou.jiang-project/cache/target/classes:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot-starter-web/2.0.5.RELEASE/spring-boot-starter-web-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot-starter/2.0.5.RELEASE/spring-boot-starter-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot/2.0.5.RELEASE/spring-boot-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot-autoconfigure/2.0.5.RELEASE/spring-boot-autoconfigure-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot-starter-logging/2.0.5.RELEASE/spring-boot-starter-logging-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.jar:/Applications/IntelliJ IDEA.app/Contents/repository/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/apache/logging/log4j/log4j-to-slf4j/2.10.0/log4j-to-slf4j-2.10.0.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/apache/logging/log4j/log4j-api/2.10.0/log4j-api-2.10.0.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/slf4j/jul-to-slf4j/1.7.25/jul-to-slf4j-1.7.25.jar:/Applications/IntelliJ IDEA.app/Contents/repository/javax/annotation/javax.annotation-api/1.3.2/javax.annotation-api-1.3.2.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/yaml/snakeyaml/1.19/snakeyaml-1.19.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot-starter-json/2.0.5.RELEASE/spring-boot-starter-json-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/fasterxml/jackson/core/jackson-databind/2.9.6/jackson-databind-2.9.6.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/fasterxml/jackson/core/jackson-core/2.9.6/jackson-core-2.9.6.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/fasterxml/jackson/datatype/jackson-datatype-jdk8/2.9.6/jackson-datatype-jdk8-2.9.6.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/fasterxml/jackson/datatype/jackson-datatype-jsr310/2.9.6/jackson-datatype-jsr310-2.9.6.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/fasterxml/jackson/module/jackson-module-parameter-names/2.9.6/jackson-module-parameter-names-2.9.6.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot-starter-tomcat/2.0.5.RELEASE/spring-boot-starter-tomcat-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.34/tomcat-embed-core-8.5.34.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/apache/tomcat/embed/tomcat-embed-el/8.5.34/tomcat-embed-el-8.5.34.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.34/tomcat-embed-websocket-8.5.34.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/hibernate/validator/hibernate-validator/6.0.12.Final/hibernate-validator-6.0.12.Final.jar:/Applications/IntelliJ IDEA.app/Contents/repository/javax/validation/validation-api/2.0.1.Final/validation-api-2.0.1.Final.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/jboss/logging/jboss-logging/3.3.2.Final/jboss-logging-3.3.2.Final.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/fasterxml/classmate/1.3.4/classmate-1.3.4.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/spring-web/5.0.9.RELEASE/spring-web-5.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/spring-webmvc/5.0.9.RELEASE/spring-webmvc-5.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/spring-aop/5.0.9.RELEASE/spring-aop-5.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/spring-expression/5.0.9.RELEASE/spring-expression-5.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot-starter-thymeleaf/2.0.5.RELEASE/spring-boot-starter-thymeleaf-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/thymeleaf/thymeleaf-spring5/3.0.9.RELEASE/thymeleaf-spring5-3.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/thymeleaf/thymeleaf/3.0.9.RELEASE/thymeleaf-3.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/attoparser/attoparser/2.0.4.RELEASE/attoparser-2.0.4.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/unbescape/unbescape/1.1.5.RELEASE/unbescape-1.1.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/thymeleaf/extras/thymeleaf-extras-java8time/3.0.1.RELEASE/thymeleaf-extras-java8time-3.0.1.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot-starter-jdbc/2.0.5.RELEASE/spring-boot-starter-jdbc-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/zaxxer/HikariCP/2.7.9/HikariCP-2.7.9.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/spring-jdbc/5.0.9.RELEASE/spring-jdbc-5.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/spring-tx/5.0.9.RELEASE/spring-tx-5.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot-starter-actuator/2.0.5.RELEASE/spring-boot-starter-actuator-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot-actuator-autoconfigure/2.0.5.RELEASE/spring-boot-actuator-autoconfigure-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/boot/spring-boot-actuator/2.0.5.RELEASE/spring-boot-actuator-2.0.5.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/io/micrometer/micrometer-core/1.0.6/micrometer-core-1.0.6.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/hdrhistogram/HdrHistogram/2.1.10/HdrHistogram-2.1.10.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/latencyutils/LatencyUtils/2.0.3/LatencyUtils-2.0.3.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/mybatis/mybatis-spring/1.2.2/mybatis-spring-1.2.2.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/mybatis/mybatis/3.2.8/mybatis-3.2.8.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/apache/tomcat/tomcat-jdbc/8.5.34/tomcat-jdbc-8.5.34.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/apache/tomcat/tomcat-juli/8.5.34/tomcat-juli-8.5.34.jar:/Applications/IntelliJ IDEA.app/Contents/repository/mysql/mysql-connector-java/5.1.46/mysql-connector-java-5.1.46.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/alibaba/fastjson/1.1.43/fastjson-1.1.43.jar:/Applications/IntelliJ IDEA.app/Contents/repository/redis/clients/jedis/2.9.0/jedis-2.9.0.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/apache/commons/commons-pool2/2.5.0/commons-pool2-2.5.0.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/spring-context-support/5.0.9.RELEASE/spring-context-support-5.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/spring-beans/5.0.9.RELEASE/spring-beans-5.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/spring-context/5.0.9.RELEASE/spring-context-5.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/spring-core/5.0.9.RELEASE/spring-core-5.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/springframework/spring-jcl/5.0.9.RELEASE/spring-jcl-5.0.9.RELEASE.jar:/Applications/IntelliJ IDEA.app/Contents/repository/net/sf/ehcache/ehcache/2.8.3/ehcache-2.8.3.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/apache/kafka/kafka_2.9.2/0.8.1/kafka_2.9.2-0.8.1.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/scala-lang/scala-library/2.9.2/scala-library-2.9.2.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/yammer/metrics/metrics-annotation/2.2.0/metrics-annotation-2.2.0.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/yammer/metrics/metrics-core/2.2.0/metrics-core-2.2.0.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/apache/zookeeper/zookeeper/3.3.4/zookeeper-3.3.4.jar:/Applications/IntelliJ IDEA.app/Contents/repository/log4j/log4j/1.2.15/log4j-1.2.15.jar:/Applications/IntelliJ IDEA.app/Contents/repository/javax/mail/mail/1.4/mail-1.4.jar:/Applications/IntelliJ IDEA.app/Contents/repository/javax/activation/activation/1.1/activation-1.1.jar:/Applications/IntelliJ IDEA.app/Contents/repository/javax/jms/jms/1.1/jms-1.1.jar:/Applications/IntelliJ IDEA.app/Contents/repository/jline/jline/0.9.94/jline-0.9.94.jar:/Applications/IntelliJ IDEA.app/Contents/repository/junit/junit/4.12/junit-4.12.jar:/Applications/IntelliJ IDEA.app/Contents/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Applications/IntelliJ IDEA.app/Contents/repository/net/sf/jopt-simple/jopt-simple/3.2/jopt-simple-3.2.jar:/Applications/IntelliJ IDEA.app/Contents/repository/com/101tec/zkclient/0.3/zkclient-0.3.jar:/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Users/jiangchuyou/Library/Caches/IntelliJIdea2019.3/captureAgent/debugger-agent.jar
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:java.library.path=/Users/jiangchuyou/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:java.io.tmpdir=/var/folders/wv/qgm6cm8d6453hskr_8dw4wlw0000gn/T/
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:java.compiler=<NA>
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:os.name=Mac OS X
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:os.arch=x86_64
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:os.version=10.15.6
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:user.name=jiangchuyou
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:user.home=/Users/jiangchuyou
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Client environment:user.dir=/Users/jiangchuyou/Desktop/workspace-java/chuyou.jiang-project
+INFO localhost-startStop-1 org.apache.zookeeper.ZooKeeper - Initiating client connection, connectString=10.211.55.5:2181,10.211.55.6:2181,10.211.55.7:2181 sessionTimeout=40000 watcher=org.I0Itec.zkclient.ZkClient@7bcce8e0
+INFO localhost-startStop-1-SendThread() org.apache.zookeeper.ClientCnxn - Opening socket connection to server /10.211.55.5:2181
+INFO localhost-startStop-1-SendThread(centos-linux-7.shared:2181) org.apache.zookeeper.ClientCnxn - Socket connection established to centos-linux-7.shared/10.211.55.5:2181, initiating session
+INFO localhost-startStop-1-SendThread(centos-linux-7.shared:2181) org.apache.zookeeper.ClientCnxn - Session establishment complete on server centos-linux-7.shared/10.211.55.5:2181, sessionid = 0x7507de61130005, negotiated timeout = 40000
+INFO localhost-startStop-1-EventThread org.I0Itec.zkclient.ZkClient - zookeeper state changed (SyncConnected)
+INFO localhost-startStop-1 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], starting auto committer every 1000 ms
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], begin registering consumer eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc in ZK
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], end registering consumer eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc in ZK
+INFO eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc_watcher_executor kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], starting watcher executor thread for consumer eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], begin rebalancing consumer eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc try #0
+INFO Thread-70 kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602158040276] Stopping leader finder thread
+INFO Thread-70 kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602158040276] Stopping all fetchers
+INFO Thread-70 kafka.consumer.ConsumerFetcherManager - [ConsumerFetcherManager-1602158040276] All connections stopped
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], Cleared all relevant queues for this fetcher
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], Cleared the data chunks in all the consumer message iterators
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], Committing all offsets after clearing the fetcher queues
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], Releasing partition ownership
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], Consumer eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc rebalancing the following partitions: ArrayBuffer(0) for topic cache-message with consumers: List(eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc-0)
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc-0 attempting to claim partition 0
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc-0 successfully owned partition 0 for topic cache-message
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], Updating the cache
+INFO Thread-70 kafka.consumer.ZookeeperConsumerConnector - [eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc], Consumer eshop-cache-group_jiangchuyoudeMacBook-Pro.local-1602158010212-ae69d6dc selected partitions : cache-message:0: fetched offset = 32: consumed offset = 32

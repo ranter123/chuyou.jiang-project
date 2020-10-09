@@ -1,9 +1,8 @@
-package chuyou.jiang.cache;
+package chuyou.jiang.cache.customercache;
 
-import chuyou.jiang.cache.computeable.Computable;
-import chuyou.jiang.cache.computeable.ExpensiveFunction;
+import chuyou.jiang.cache.customercache.computeable.Computable;
+import chuyou.jiang.cache.customercache.computeable.ExpensiveFunction;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ConcurrentHashMap;
