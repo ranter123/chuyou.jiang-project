@@ -30,9 +30,10 @@ public class KafkaConsumer implements Runnable {
     public void run() {
         Map<String, Integer> topicCountMap = new HashMap<String, Integer>();
         topicCountMap.put(topic, 1);
+        System.out.println("获取到了kafka连接");
         Map<String, List<KafkaStream<byte[], byte[]>>> consumerMap = connector.createMessageStreams(topicCountMap);
+        System.out.println("====================KafkaMap"+consumerMap.toString());
         List<KafkaStream<byte[], byte[]>> streams = consumerMap.get(topic);
-        System.out.println("iii"+streams.toString());
         for (KafkaStream stream : streams) {
             new Thread(new KafkaMessageProcessor(stream)).start();
         }

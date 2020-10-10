@@ -16,6 +16,8 @@
         <module>rabbitmq</module>
         <module>cache</module>
         <module>redis</module>
+        <module>zookeeper</module>
+        <module>spring-cloud</module>
     </modules>
     <name>chuyou.jiang-learn-project</name>
 
