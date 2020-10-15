@@ -3,6 +3,7 @@ package chuyou.jiang;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationProperties;
@@ -17,6 +18,7 @@ import org.springframework.transaction.PlatformTransactionManager;
  * @Description:
  */
 @SpringBootApplication
+@MapperScan("chuyou.jiang.hystrix.mapper")
 public class CloudApplication {
 
     public static void main(String[] args) {

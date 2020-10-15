@@ -9,5 +9,8 @@ spring:
     url: jdbc:mysql://10.211.55.8:3306/eshop?encoding=utf8
     password: Jcy123!@#.
     username: root
+#    url: jdbc:mysql://127.0.0.1:3306/learn?useUnicode=true&characterEncoding=utf8&useSSL=false
+#    password: root
+#    username: root
   redis:
     password: redis-pass
