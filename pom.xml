@@ -26,7 +26,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <mybatis-spring-boot>2.1.1</mybatis-spring-boot>
-        <mysql-connector>5.1.46</mysql-connector>
+        <mysql-connector>8.0.28</mysql-connector>
         <spring.boot.version>2.0.5.RELEASE</spring.boot.version>
 <!--        <spring.boot.version>1.2.5.RELEASE</spring.boot.version>-->
         <spring.lombok.version>1.16.22</spring.lombok.version>
